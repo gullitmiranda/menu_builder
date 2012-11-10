@@ -24,9 +24,9 @@ module MenuBuilder
       end
 
       class Menu
-        def initialize(context, current_class="current", &block)
+        def initialize(context, current_class="active", &block)
           @context            = context
-          @current_class      = current_class || "current"
+          @current_class      = current_class || "active"
           @menu_items         = context.instance_variable_get('@menu_items')
           @actual_items       = []
           @block              = block

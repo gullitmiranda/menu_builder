@@ -1,6 +1,6 @@
 = menu_builder
 
-With this gem/plugin you get a helper to define menus and also can control the current item of menu
+With this gem/plugin you get a helper to define menus and also can control the active item of menu
 in controller. Easy like always should be!
 
 == Instalation
@@ -53,7 +53,7 @@ You can also change to menu item in action level instead of class level:
    <ul id="mainMenu" class="menu">
      <li><a href="/accounts">Account</a></li>
      <li><a href="/users">Users</a></li>
-     <li><a href="/" class="current">Dashboard</a></li>
+     <li><a href="/" class="active">Dashboard</a></li>
      <li><a href="/projects">Projects</a></li>
    </ul>
 
@@ -100,8 +100,8 @@ like below:
       #header a:hover span { color:#FFF; }
       #header a:hover { background-position:0% -43px; }
       #header a:hover span { background-position:100% -43px; }
-      #header #current a { background-position:0% -43px; }
-      #header #current a span { background-position:100% -43px; }
+      #header #active a { background-position:0% -43px; }
+      #header #active a span { background-position:100% -43px; }
     </style>
   </head>
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["danielvlopes@gmail.com"]
   s.homepage    = "http://objetiva.co/"
   s.summary     = %q{minimalist solution for menus and tabs in Rails}
-  s.description = %q{helper and controller macros to define current menu item and also create the menu in view.}
+  s.description = %q{helper and controller macros to define active menu item and also create the menu in view.}
 
   s.rubyforge_project = "menu_builder"
 

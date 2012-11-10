@@ -38,7 +38,7 @@ class HelperTest < ActionView::TestCase
       concat m.contact "Store", "/store"
     })
 
-    assert_select "li.current", 1
+    assert_select "li.active", 1
   end
   
   test "customize the current item class" do
@@ -61,7 +61,7 @@ class HelperTest < ActionView::TestCase
       concat m.settings "Settings", "/settings"
     })
 
-    assert_select "li.current", 2
+    assert_select "li.active", 2
   end
   
   test "accept more than one menu item for a custom current item class" do
@@ -91,7 +91,7 @@ class HelperTest < ActionView::TestCase
       concat m.notifications "Settings", "/settings"
     })
 
-    assert_select "li.current", 2
+    assert_select "li.active", 2
   end
 
   test "marks the first item with class .first" do
